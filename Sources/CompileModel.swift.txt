@@ -1,0 +1,6 @@
+import Foundation
+import CoreML
+let input = URL(fileURLWithPath: CommandLine.arguments[1])
+let output = URL(fileURLWithPath: CommandLine.arguments[2])
+let compiled = try MLModel.compileModel(at: input)
+try FileManager.default.copyItem(at: compiled, to: output)
