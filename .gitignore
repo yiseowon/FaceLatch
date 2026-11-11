@@ -1,0 +1,11 @@
+.DS_Store
+.venv/
+__pycache__/
+dist/
+*.app/
+*.mlpackage/
+*.mlmodelc/
+*.onnx
+*.p12
+*.key
+.env
